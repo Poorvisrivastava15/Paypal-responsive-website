@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTUS PAGE</title>
+    <style>
+        body {
+            min-height: 200vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 300 auto;
+            background: url(https://media.istockphoto.com/photos/old-quill-pen-books-and-vintage-inkwell-on-wooden-desk-in-the-old-picture-id1022236962?k=20&m=1022236962&s=170667a&w=0&h=VMdi_7m3QeKR9AXr-bYO9HTL7OOW-KuLmrd7HNYZQa8=);
+            /* background:linear-gradient(to right, rgba(70, 49, 49, 0.808),rgb(58, 49, 70) ) ; */
+            backdrop-filter:blur(5px);
+            background-size: cover;
+        }
+        
+        section{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background: rgba(0, 0, 0, 0.5);
+            backdrop-filter:blur(5px);
+            padding: 20px; */
+        }
+        #contact {
+                background-color: #cfbfbe2a;
+                background-image: linear-gradient(50deg, #7da6e93b 0%rgba(64, 48, 102, 0.123)66 74%);
+                color: white;
+                padding: 20px 30px 40px 30px;
+
+            }
+
+        .contact-heading{
+                font-size: 2rem;
+                font-weight: 300;
+                color:whitesmoke;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+        #contact h1,
+            #contact h1 span {
+                color: white;
+            }
+
+        #contact .social-icons li a i {
+                font-size: 1.2rem;
+                margin: 40px 10px 10px;
+                padding: 10px 14px 20px 10px;
+
+            }
+
+
+        #contact-container {
+                display: flex;
+            }
+
+        #contact-form-container {
+                width: 50%;
+            }
+
+        #contact-form {
+                margin-left: 20%;
+            }
+
+        #contact-form input,
+            textarea {
+                max-width: 90%;
+                margin: 15px;
+                padding: 4px 10px;
+                border: 0px solid transparent;
+                border-bottom: 2px solid white;
+                color: #d9dcdd;
+                background: transparent;
+                width: 90%;
+                line-height: 1.6;
+                font-size: 1.05rem;
+            }
+
+        #contact-form button[type="submit"] {
+                background: transparent;
+                font-size: 0.95rem;
+                border: 2px solid white;
+                margin-top: 5%;
+                margin-left: 35%;
+                border-radius: 2px;
+                color: white;
+                font-family: sans-serif;
+                font-weight: 700;
+                letter-spacing: 0.046875em;
+                line-height: 1;
+                padding: 0.8em 0.8em 0.78em;
+                text-transform: uppercase;
+            }
+
+        #contact-form button:hover {
+                background: white;
+                color: #13386fe0;
+            }
+
+        #my-details-container {
+                width: 35%;
+                margin-left: 6%;
+            }
+
+        #my-details-container h3 {
+                color: white;
+                font-weight: 550;
+                font-size: 1.2rem;
+            }
+        #my-details-container p {
+                color: #d9dcdd;
+                font-size: 0.9rem;
+            }
+
+        .my-details-info-container {
+                margin-bottom: 20px;
+                color: #d9dcdd;
+                font-size: 1rem;
+            }
+
+        .my-details-info-container span {
+                margin-left: 0.4rem;
+            }
+
+        .my-details-info-container i {
+                color: red;
+            }
+
+        .text-center {
+                text-align: center;
+            }
+
+        input:focus,
+            select:focus,
+            textarea:focus,
+            button:focus {
+                outline: none;
+            }
+
+
+    </style>
+    <!-- <script src="https://kit.fontawesome.com/2cc21cf3a4.js" crossorigin="anonymous"></script> -->
+</head>
+        <body>
+            <section id="contact">
+                <h3 class="contact-heading mb75px">
+                    <span>
+                        <i class="far fa-address-card" aria-hidden="true"></i>
+                    </span>
+                    <span> CONTACT</span>
+                </h3>
+                <div id="contact-container">
+    
+                    <div id="contact-form-container">
+                        <form id="contact-form">
+                            <lable>Name</lable>
+                            <input id="input-name" name="name" type="text" placeholder="Your Name">
+                            <lable>Email</lable>
+                            <input id="input-email" name="input-email" type="email" required="" placeholder="Your Email">
+                            <lable>Massage</lable>
+                            <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
+                            <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                    <div id="my-details-container">
+    
+                        <h3> Get In touch </h3>
+    
+                        <h3> My Address </h3>
+                        <div class="my-details-info-container">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Lucknow(Uttar Pradesh)</span>
+                        </div>
+                       <div class="my-details-info-container">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <span><a href="tel:+919580197977">+91 9580197977</a></span>
+                        </div>
+                        <div class="my-details-info-container">
+                            <i class="far fa-envelope" aria-hidden="true"></i>
+                            <span><a href="mailto:poorvisrivastava5@gmail.com" target="blank">poorvisrivastava5@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+</html>
